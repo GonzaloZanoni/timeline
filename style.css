@@ -2,11 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body {
+html, body {
 	background-color: #181816;
 	overflow-x: hidden;
 	font-family: "Poppins", sans-serif;
 	font-weight: 200;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 img {
@@ -65,7 +68,7 @@ h4{
   }
 
 .Container {
-	width: 1160px;
+	width: 90%;
 	margin: 0 auto;
 	position: relative;
 }
@@ -269,6 +272,10 @@ h4{
 
 /*--- Responsive Code ---*/
 @media only screen and (max-width: 979px) {
+	.Container {
+		width: 100%; /* Cambiar el ancho al 100% para dispositivos móviles */
+		padding: 0;
+	  }
   .Icono{
 	max-width: 100%;
 	height: auto;
@@ -277,8 +284,11 @@ h4{
 	width: 80%;
 	height: 80%;
 }
-  .ag-timeline_line {
+  /* .ag-timeline_line {
 	left: 30px;
+  } */
+  .ag-timeline_line {
+    left: 30px; /* Ajustar la alineación de la línea de tiempo en dispositivos móviles */
   }
 
   .ag-timeline_item:nth-child(2n) {
