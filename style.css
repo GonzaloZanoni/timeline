@@ -12,10 +12,13 @@ html, body {
 	padding: 0;
 }
 
+
 img {
 	max-width: 100%;
 }
-
+h1{
+	font-size: medium;
+}
 h2{
 	padding: 10px;
 	font-weight: 200;
@@ -68,9 +71,13 @@ h4{
   }
 
 .Container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 90%;
 	margin: 0 auto;
 	position: relative;
+	
 }
 /* 
 .Main {
@@ -89,6 +96,11 @@ h4{
 .secTitle {
 	color: #ffeb3b;
 	font-size: 100px
+}
+.dateTitle{
+	font-size: 15px;
+	font-weight:200;
+	color: #fff;
 }
 .Icono{
 	/* max-width: 100%;
@@ -270,6 +282,56 @@ h4{
 	
 }
 
+/* VIDEO */
+#toggleButton {
+	background-color: #0c5fb8; /* Color celeste */
+	color: white;
+	padding: 10px 20px;
+	border-radius: 20px; /* Redondea las esquinas */
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 15px;
+  }
+  
+  #toggleButton:hover {
+	background-color: #0c5fb8; /* Cambia el color cuando el cursor está sobre el botón */
+  }
+
+#videoContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* Ajusta la altura del contenedor */
+	padding: 10px;
+	margin-top: 5px;
+	text-align: center; /* Centra el contenido */
+  }
+
+  #myVideo {
+	max-width: 100%;
+	max-height: 100%;
+  }
+
+  footer {
+	margin-top: 40px;
+    background-color: #33333380;
+    /* background: transparent; */
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    height: 130px;
+
+}
+p{
+	padding: 50px 0 0;
+}
+.author {
+    font-weight: bold;
+}
+
 /*--- Responsive Code ---*/
 @media only screen and (max-width: 979px) {
 	.Container {
@@ -337,6 +399,7 @@ h4{
   .ag-timeline-card_arrow {
     margin-top: 12px;
   }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -348,7 +411,16 @@ h4{
     height: auto;
     width: auto;
   }
-
+  #videoContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 40vh; /* Ajusta la altura del contenedor */
+	padding: 10px;
+	margin-top: 5px;
+	text-align: center; /* Centra el contenido */
+  }
 
 }
 
@@ -356,6 +428,8 @@ h4{
   .secTitle {
     font-size: 60px;
   }
+
+  
 }
 
 @media (min-width: 768px) and (max-width: 979px) {

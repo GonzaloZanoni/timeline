@@ -83,3 +83,20 @@ buttons.forEach((button, index) => {
     }
   });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var video = document.getElementById("myVideo");
+  var toggleButton = document.getElementById("toggleButton");
+
+  toggleButton.addEventListener("click", function() {
+    if (video.paused) {
+      video.play();
+      toggleButton.textContent = "Pausa";
+    } else {
+      video.pause();
+      toggleButton.textContent = "Reproducir";
+    }
+  });
+});
